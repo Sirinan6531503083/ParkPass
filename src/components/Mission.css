@@ -1,0 +1,195 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+
+body, html {
+  min-height: 100%;
+  background: linear-gradient(135deg, #e0f7fa, #fff5f5);
+}
+
+
+.mission-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 120px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.mission-container h1 {
+  font-size: 2.5rem;
+  color: #070808;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.park-search {
+  display: block;          
+  margin: 0 auto 30px auto; 
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px 12px 45px;
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  background-color: #fff;
+
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+
+.park-search:focus {
+  border: 2px solid #00796b;
+  box-shadow: 0 0 12px rgba(0,121,107,0.4);
+}
+
+
+.park-search:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 10px rgba(0,121,107,0.3);
+}
+
+
+.parks-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.park-card {
+  background-color: #ffffffcc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+.park-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.park-card h3 {
+  margin-bottom: 10px;
+  color: #00796b;
+}
+
+
+.missions {
+  width: 100%;
+}
+
+.missions h2 {
+  font-size: 2rem;
+  color: #004d40;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mission-card {
+  background-color: #ffffffcc;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.mission-card.completed {
+  background-color: #dcedc8cc;
+}
+
+.mission-card button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00796b;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.mission-card button:hover {
+  background-color: #004d40;
+}
+
+
+.badge {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffd70033;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.badge h2 {
+  color: #ff6f00;
+  margin-bottom: 10px;
+}
+
+
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: #00796b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #004d40;
+}
+
+
+@media (max-width: 1024px) {
+  .parks-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-container {
+    padding: 100px 10px 30px;
+  }
+
+  .parks-list {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

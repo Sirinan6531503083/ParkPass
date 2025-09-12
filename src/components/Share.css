@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+
+.share-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 120px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.share-container h1 {
+  font-size: 2.2rem;
+  color: #00796b;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.share-editor {
+  width: 100%;
+  background-color: #ffffffcc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.preview-img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.share-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.share-actions input[type="file"] {
+  cursor: pointer;
+}
+
+.share-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #00796b;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.share-actions button:hover {
+  background-color: #004d40;
+}
+
+
+.posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-card {
+  background-color: #ffffffcc;
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.post-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.post-img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+
+.post-footer button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4267B2; 
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.post-footer button:hover {
+  background-color: #2d4373;
+}
+
+
+.post-date {
+  font-size: 0.85rem;
+  color: #555;
+}

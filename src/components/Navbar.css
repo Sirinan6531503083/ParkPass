@@ -1,0 +1,188 @@
+
+:root {
+  --navbar-height-desktop: 70px;
+  --navbar-height-mobile: 120px; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; 
+  background-color: white; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.3); 
+  height: var(--navbar-height-desktop);
+  transition: height 0.3s;
+}
+
+
+.navbar-logo img.logo-img {
+  height: 4.2rem; 
+  width: auto;
+  display: block;
+  transition: height 0.3s;
+}
+
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem; 
+  align-items: center;
+}
+
+.navbar-menu li a,
+.navbar-menu li button.lang-btn {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background 0.3s, color 0.3s;
+  border: none;
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+  font-size: 1.2rem; 
+}
+
+.navbar-menu li a:hover,
+.navbar-menu li button.lang-btn:hover {
+  background-color: rgba(0, 150, 50, 0.1);
+  color: #2e7d32;
+}
+
+
+@media (max-width: 1024px) {
+  .navbar-logo img.logo-img {
+    height: 2.5rem;
+  }
+  
+  .navbar-menu li a,
+  .navbar-menu li button.lang-btn {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 0.75rem 1.5rem;
+    height: var(--navbar-height-mobile); 
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: flex-start; 
+  }
+
+  .navbar-menu li a,
+  .navbar-menu li button.lang-btn {
+    width: auto;
+    text-align: left;     
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-logo img.logo-img {
+    height: 2.2rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-logo img.logo-img {
+    height: 2rem;
+  }
+
+  .navbar-menu li a,
+  .navbar-menu li button.lang-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+}
+
+.navbar-profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ffd700; 
+  transition: transform 0.2s;
+}
+
+.navbar-profile-img:hover {
+  transform: scale(1.1);
+}
+
+
+
+.collect-container {
+  padding-top: calc(var(--navbar-height-desktop) + 20px); 
+}
+
+@media (max-width: 768px) {
+  .collect-container {
+    padding-top: calc(var(--navbar-height-mobile) + 10px); 
+  }
+}
+
+
+.parks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 0 10px;
+}
+
+.park-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+
+  aspect-ratio: 1 / 1.2; 
+}
+
+.park-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.park-card h3 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 8px 0 4px;
+}
+
+.park-card .stamp {
+  font-size: 0.85rem;
+  color: #2e7d32;
+}
