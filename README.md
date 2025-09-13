@@ -1,3 +1,25 @@
+# Digital Stamp Collection – Explore Thai National Parks
+
+A digital stamp book app to **collect and preserve memories from visiting national parks across Thailand**. Every park you visit can leave a "digital stamp" in your virtual book, making your travel experiences more fun and memorable.
+
+## About
+This app encourages travel within Thailand's beautiful national parks while keeping memories in a **modern, eco-friendly, digital format**. Perfect for travelers, students, and nature enthusiasts.
+
+## Why This Project 
+People often forget their physical park journals, which prevents them from collecting stamps. **ParkPass** provides a digital solution, allowing users to:
+
+- Collect stamps easily
+- Track their visits
+- Enjoy a seamless and convenient experience without worrying about losing the journal
+
+
+## Tech Stack
+- Frontend: React / Vue / Flutter (adjust based on your implementation)
+- Backend: Firebase / Node.js (if applicable)
+- Database: Firestore / Realtime Database (optional)
+- Deployment: Web / Mobile
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
